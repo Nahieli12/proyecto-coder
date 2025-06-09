@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+body{
+    font-family: "Play", sans-serif;
+}
+
+/*------RESET--------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------HEADER--------*/
+
+header{
+    background-color: rgb(16, 16, 65);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+}
+
+header h1{
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600px;
+    color: white;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 10px;
+}
+
+header nav ul li a:hover{
+    color: rgb(148, 138, 0);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+/*--------MAIN-----------*/
+
+.Hero a:hover{
+    background-color: rgb(148, 138, 0);
+    color: white;
+}
+
+.Hero{
+    text-align:center;
+    color: white;
+    height: 500px;
+    background-image: url(../img/Banner.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+.Hero h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.Hero p{
+    font-size: 16px;    
+    margin-bottom: 20px;
+}
+
+.Hero a{
+    background-color: rgb(16, 16, 65);
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.Primeras{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
+}
+
+.Primeras div{
+    width: 50%;
+}
+
+.Primeras h2{
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.Primeras img{
+    width: 400px;
+    height: 300px;
+}
+
+.Primeras p{
+    margin-left: 10px;
+}
+
+.Reservas h2{
+    background-color: rgb(16, 16, 65);
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Reservas div h3{
+    margin-bottom: 5px;
+}
+
+.Reservas .Reservas-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Reservas .Reservas-contenedor div{
+    border: 2px solid grey; 
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    text-align: center;
+}
+
+.Reservas div img{
+    width: 100%;
+    height: 250px;
+}
+
+.Reservas div a:active{
+    background-color: rgb(148, 138, 0);
+    color: white;
+}
+
+.Reservas div a{
+    background-color: rgb(16, 16, 65);
+    text-decoration: none;
+    color: yellow;
+    padding: 10px;
+}
+
+.Reservas p{
+    margin-bottom: 20px;
+}
+
+.carousel-inner{
+    padding: 10px;
+}
+
+.Infantiles .Infantiles-Contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Infantiles .Infantiles-Contenedor div{
+    border: 2px solid grey;
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    text-align: center;
+}
+
+.Infantiles p{
+    margin-bottom: 15px;
+}
+
+.Infantiles div img{
+    width: 100%;
+    height: 250px;
+}
+
+.Infantiles div a:active{
+    background-color: rgb(148, 138, 0);
+    color: white;
+}
+
+.Infantiles div a{
+    background-color: rgb(16, 16, 65);
+    text-decoration: none;
+    color: yellow;
+    padding: 10px;
+}
+
+.Infantiles h2{
+    background-color: rgb(16, 16, 65);
+    color: yellow;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+.img-4{
+    grid-column: span 2;
+}
+
+.img-6{
+    grid-row: span 2;
+}
+
+.img-8{
+    grid-row: span 2;
+}
+
+.Galeria-item h3{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(118, 118, 233, 0.63);
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+
+.Galeria-item{
+    position: relative;
+}
+
+.Galeria-ypf div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Galeria-ypf{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 200px 200px 200px;*/
+    grid-auto-rows: 250px;
+    gap: 25px;
+    margin: 25px;
+}
+
+.Galeria-item{
+    background-color: rgb(187, 198, 247);
+    border: 2px solid rgb(118, 118, 233);
+}
+
+
+
+
+
+/*--------FOOTER---------*/
+footer{
+    background-color: rgb(16, 16, 65);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a img{
+    width: 50px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 1075px){
+    .Primeras img{
+        display: none;
+}
+
+}
+
+@media screen and (max-width: 431px){
+    .hero h2{
+        font-size: 35px;
+    }
+
+    .hero p{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:733px){
+    header{
+        flex-direction: column;
+    }
+}
