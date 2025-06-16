@@ -51,6 +51,14 @@ header nav ul li a{
 
 /*--------MAIN-----------*/
 
+.Eventos-hero h2{
+    font-size: 40px;
+    background-color: rgb(16, 16, 65);
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .Hero a:hover{
     background-color: rgb(148, 138, 0);
     color: white;
@@ -72,10 +80,6 @@ header nav ul li a{
     margin-bottom: 5px;
 }
 
-.Hero p{
-    font-size: 16px;    
-    margin-bottom: 20px;
-}
 
 .Hero a{
     background-color: rgb(16, 16, 65);
@@ -98,7 +102,7 @@ header nav ul li a{
 }
 
 .Primeras h2{
-    font-size: 35px;
+    font-size: 28px;
     margin-left: 10px;
 }
 
@@ -108,6 +112,7 @@ header nav ul li a{
 }
 
 .Primeras p{
+    font-size: 12px;
     margin-left: 10px;
 }
 
@@ -159,9 +164,6 @@ header nav ul li a{
     margin-bottom: 20px;
 }
 
-.carousel-inner{
-    padding: 10px;
-}
 
 .Infantiles .Infantiles-Contenedor{
     display: flex;
