@@ -13,22 +13,41 @@ body{
 
 /*--------HEADER--------*/
 header nav ul{
-    background-color: rgb(48, 48, 48) !important;
+    background-color: rgb(16, 16, 65) !important;
+
 }
 
 header nav ul li a{
     color: white !important;
 }
 
+#escudo-nav {
+  height: 90px;
+  transition: height 0.3s ease;
+}
+
+#escudo-nav.small {
+  height: 60px;
+}
+
+
+.escudo{
+    height: 50px;
+    width: auto;
+}
+
+
 .navbar-expand-lg{
-    background-color: rgb(16, 16, 65);
-    position: sticky;
+    background-color: rgb(16, 16, 65) !important;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    z-index: 1;
+    padding: 15px;
+    z-index: 1000;
 }
 
 .navbar-brand{
@@ -47,205 +66,560 @@ header nav ul li a{
     text-align: center;
 }
 
-.Hero a:hover{
-    background-color: rgb(148, 138, 0);
-    color: white;
-}
-
 .Hero{
+    background-size: cover;
+    background-position: center-top 50%;
+    margin: 0;
+    padding: 0;
     text-align:center;
     color: white;
-    height: 500px;
-    background-image: url(../img/Banner.png);
-    background-position:center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
+    height: 700px;
+    background-image: url(../img/Abrazo-de-gol.jpeg)
 }
 
-.Hero h2{
-    font-size: 40px;
-    margin-bottom: 5px;
+/*--------Cantina.html---------*/
+
+.Promos-cantina div a{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
 }
 
-
-.Hero a{
-    background-color: rgb(16, 16, 65);
-    text-decoration: none;
-    color: yellow;
-    font-size: 20px;
-    padding: 10px;
-    transition: 0.5s;
+.Promos-cantina h3{
+  font-size: 18px;
 }
 
-.Primeras{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 40px;
+.Promos-cantina h2{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background-color: rgb(16, 16, 65);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
 }
 
-.Primeras div{
-    width: 50%;
+.Promos-cantina .Contenedor-promos{
+  display: flex;
 }
 
-.Primeras h2{
-    font-size: 28px;
-    margin-left: 10px;
+.Promos-cantina .Contenedor-promos div{
+  border: 2px solid grey;
+  width: 250px;
+  height: 350px;
+  margin: 20px;
+  text-align: center;
+  overflow: hidden;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.548);
+  transition: transform 0.3s ease, box-shadow o,3s ease;
 }
 
-.Primeras img{
-    width: 400px;
-    height: 300px;
-}
-
-.Primeras p{
-    font-size: 12px;
-    margin-left: 10px;
-}
-
-.Reservas h2{
-    background-color: rgb(16, 16, 65);
-    color: yellow;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-}
-
-.Reservas div h3{
-    margin-bottom: 5px;
-}
-
-.Reservas .Reservas-contenedor{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.Reservas .Reservas-contenedor div{
-    border: 2px solid grey; 
-    width: 300px;
-    height: 400px;
-    margin: 15px;
-    text-align: center;
-}
-
-.Reservas div img{
+.Promos-cantina div img{
     width: 100%;
     height: 250px;
+
 }
 
-.Reservas div a:active{
-    background-color: rgb(148, 138, 0);
-    color: white;
+.grid-item h3{
+  color: white;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.911);
+  width: 100%;
 }
 
-.Reservas div a{
-    background-color: rgb(16, 16, 65);
-    text-decoration: none;
-    color: yellow;
-    padding: 10px;
+.grid-item{
+  background-color: white;
+  border: 2px solid rgb(27, 27, 131);
+  position: relative;
 }
 
-.Reservas p{
-    margin-bottom: 20px;
-}
-
-
-.Infantiles .Infantiles-Contenedor{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.Infantiles .Infantiles-Contenedor div{
-    border: 2px solid grey;
-    width: 300px;
-    height: 400px;
-    margin: 15px;
-    text-align: center;
-}
-
-.Infantiles p{
-    margin-bottom: 15px;
-}
-
-.Infantiles div img{
-    width: 100%;
-    height: 250px;
-}
-
-.Infantiles div a:active{
-    background-color: rgb(148, 138, 0);
-    color: white;
-}
-
-.Infantiles div a{
-    background-color: rgb(16, 16, 65);
-    text-decoration: none;
-    color: yellow;
-    padding: 10px;
-}
-
-.Infantiles h2{
-    background-color: rgb(16, 16, 65);
-    color: yellow;
-    font-size: 20px;
-    text-align: center;
-    padding: 5px;
-}
-.img-4{
-    grid-column: span 2;
-}
-
-.img-6{
-    grid-row: span 2;
-}
-
-.img-8{
-    grid-row: span 2;
-}
-
-.Galeria-item h3{
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(118, 118, 233, 0.63);
-    width: 100%;
-    color: white;
-    padding: 10px;
-}
-
-.Galeria-item{
-    position: relative;
-}
-
-.Galeria-ypf div img{
+.grid-galeria div img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.Galeria-ypf{
+.grid-galeria{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /*grid-template-rows: 200px 200px 200px;*/
     grid-auto-rows: 250px;
-    gap: 25px;
-    margin: 25px;
+    gap: 10px;
 }
 
-.Galeria-item{
-    background-color: rgb(187, 198, 247);
-    border: 2px solid rgb(118, 118, 233);
+.main-cantina{
+    background-size: cover;
+    background-position: center-top 50%;
+    margin: 0;
+    padding-top: 150px;
+    text-align:center;
+    color: white;
+    height: 700px;
+    background-image: url(../img/cantina-lomo.webp)
+
+}
+
+/*--------Cantina.html---------*/
+
+/*--------Contactos.html--------*/
+
+/*--------Contactos.Animaciones--------*/
+
+.titulo-animado {
+  color: #004080;
+  animation: slideInDown 1s ease-out;
+}
+
+.boton-animado {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*--------Contactos.Animaciones--------*/
+
+main.container {
+  padding: 60px 15px;
+}
+
+form.bg-light {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.637);
+  padding: 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+form label {
+  font-weight: 600;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #004080;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 64, 128, 0.15);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-primary {
+  background-color: #004080;
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #003060;
+  transform: scale(1.03);
+}
+
+main.container{
+  padding-top: 200px;
+}
+
+/*--------Contactos.html--------*/
+
+/*--------Eventos.html--------*/
+
+.info-inscripcion {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.info-marco {
+  background-color: #012e40;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 700px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.info-marco h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.info-marco p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 
+.ypf-light {
+  background-color: #a7d8f0; /* celeste claro */
+}
+
+.ypf-dark {
+  background-color: #005b9a;
+  color: white;
+}
+
+.ypf-accent {
+  background-color: #003b6f;
+  color: white;
+}
+
+.ypf-hour {
+  font-weight: bold;
+  background-color: #005b9a;
+  color: white;
+}
+
+.main-eventos{
+    padding-top: 130px;
+}
+
+.main-eventos div h1{
+    font-size: 25px;
+    color: #495057;
+    text-align: center;
+}
+
+/*--------Eventos.html--------*/
+
+/*--------Servicios.html--------*/
+
+.servicio-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
 
 
+.main-servicios {
+  padding-top: 150px; /* Ajustalo según la altura real de tu navbar */
+}
+
+
+/*--------Servicios.html--------*/
+
+/*--------Partidos.html--------*/
+
+.carrusel-tablas {
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+}
+
+.carousel .table caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+
+.contenedor-fixture-horizontal {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.tarjeta-fixture-horizontal {
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.63);
+}
+
+.tarjeta-fixture-horizontal:hover {
+  transform: scale(1.02);
+}
+
+.contenido-fixture {
+  padding: 16px;
+  flex: 1;
+}
+
+.contenido-fixture h3 {
+  font-size: 22px;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.contenido-fixture p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.btn-ver-mas {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #343a40;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-ver-mas:hover {
+  background-color: #495057;
+}
+
+.imagen-fixture img {
+  width: 180px;
+  height: 100%;
+  object-fit: cover;
+  border-left: 1px solid #ddd;
+}
+
+.Partidos-futsal p{
+    text-align: center;
+    color: rgb(51, 50, 50);
+    font-size: 20px;
+}
+
+.Partidos-futsal h1{
+    color:rgb(16, 16, 65);
+    text-align:center;
+}
+
+.Hero-partidos{
+    background-size: cover;
+    background-position: center-top 50%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    color: white;
+    height: 700px;
+    background-image: url(../img/f20-victoria.jpeg)
+}
+
+/*--------Partidos.html--------*/
+
+.contenido a{
+    display: inline-block;
+    margin-top: 10px;
+    color: #020080; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenido p{
+    font-size: 14px;
+    color: #666;
+}
+
+.contenido h2{
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.contenido{
+    padding: 15px;
+}
+
+.tarjeta-noticia img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tarjeta-noticia:hover{
+    transform: scale(1.02);
+}
+
+.tarjeta-noticia{
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.548);
+    transition: transform 0.3s ease, box-shadow o,3s ease;
+}
+
+.contenedor-tarjetasNT{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.acordeon-contenedor{
+    max-width: 800px;
+    margin: 40px auto;
+    margin-top: -100px;
+}
+
+.contenedor-tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -140px;
+}
+
+.btn-instagram img{
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.btn-instagram:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.btn-instagram{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+
+.tarjeta:hover{
+    box-shadow: 0 12px 20px rgba(56, 56, 56, 0.815); /* sombra más fuerte */
+    transform: scale(1.05); /* agranda la tarjeta */
+}
+
+.tarjeta{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background-image: url(../img/Primera-Femenino.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+
+.Futsal h2{
+    font-weight: bolder;
+}
+
+.Futsal p{
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+    columns: 2;
+    column-gap: 40px;
+}
+
+.Futsal{
+    color:rgb(16, 16, 65);
+    text-align:start;
+    padding: 30px;
+}
 
 /*--------FOOTER---------*/
+
+.footer-social {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center; 
+  align-items: center;
+}
+
+.footer-social a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  transform: scale(1.2);
+}
+
+.icon-social {
+  width: 28px;
+  height: 28px;
+  filter: invert(30%) sepia(80%) saturate(200%) hue-rotate(180deg);
+}
+
+
+.Footer-sitio{
+    background-color: #222;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.Footer-escudo{
+    max-height: 80px;
+    margin-bottom: 1rem;
+}
+
 footer{
     background-color: rgb(16, 16, 65);
     padding: 20px;
